@@ -4,12 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 | Course Home Page | Neal Kammeyer</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development course home page for Neal Kammeyer">
+    <meta name="author" content="Neal Kammeyer">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
-    <h1>WDD 231</h1>
-    <p>Added local repository</p>
+    <header>
+        <img src="images/apple.svg" alt="Neal Kammeyer site logo">
+        <span id="my-name">Neal Kammeyer</span>
+
+        <button id="menu" aria-label="Open navigation menu">&#9776;</button>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+            <!-- About me content -->
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <!-- My photo -->
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <!-- Course filters/cards will be generated here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nkammeyer/" target="_blank">
+                <img src="images/linkedin-square.svg" alt="LinkedIn">
+            </a>
+            <a href="https://nkammeyer-coder.github.io/wdd231/" target="_blank">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+            <a href="https://www.facebook.com/nkammeyer" target="_blank">
+                <img src="images/facebook-square.svg" alt="Facebook">
+            </a>
+        </div>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Neal Kammeyer | Arizona
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
