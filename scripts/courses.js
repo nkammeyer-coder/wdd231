@@ -79,15 +79,46 @@ const courses = [
 ];
 
 const courseList = document.querySelector("#course-list");
+const totalCredits = document.querySelector("#total-credits");
 
-courses.forEach((course) => {
-    const courseCard = document.createElement("div");
+const allButton = document.querySelector("#all");
+const cseButton = document.querySelector("#cse");
+const wddButton = document.querySelector("#wdd");
 
-    courseCard.textContent = `${course.subject} ${course.number}`;
+function displayCourses(courseArray) {
+    courseList.innerHTML = "";
 
-    if (course.completed) {
-        courseCard.classList.add("completed");
-    }
+    courseArray.forEach((course) => {
+        const courseCard = document.createElement("div");
 
-    courseList.appendChild(courseCard);
-}); 
+        courseCard.textContent = `${course.subject} ${course.number}`;
+
+        if (course.completed) {
+            courseCard.classList.add("completed");
+        }
+
+        courseList.appendChild(courseCard);
+    });
+
+    const credits = courseArray.reduce((total, course) => {
+        return total + course.credits;
+    }, 0);
+
+    totalCredits.textContent = `Total Credits: ${credits}`;
+}
+
+allButton.addEventListener("click", () => {
+    displayCourses(courses);
+});
+
+cseButton.addEventListener("click", () => {
+    const cseCourses = courses.filter((course) => course.subject === "CSE");
+    displayCourses(cseCourses);
+});
+
+wddButton.addEventListener("click", () => {
+    const wddCourses = courses.filter((course) => course.subject === "WDD");
+    displayCourses(wddCourses);
+});
+
+displayCourses(courses);
