@@ -1,0 +1,85 @@
+{
+    "members": [
+        {
+            "name": "American Arrow Beef Company",
+            "address": "610 W. Cleveland St., St. Johns, AZ 85936",
+            "phone": "(928) 337-3055",
+            "website": "https://www.stjohnsregionalchamber.com/memberdirectory",
+            "image": "american-arrow-beef.webp",
+            "membership": 3,
+            "category": "Agriculture and Food"
+        },
+        {
+            "name": "Diamond C Feed",
+            "address": "1530 W. Cleveland St., St. Johns, AZ 85936",
+            "phone": "(928) 337-4474",
+            "website": "https://www.stjohnsregionalchamber.com/memberdirectory",
+            "image": "diamond-c-feed.webp",
+            "membership": 2,
+            "category": "Agriculture and Feed"
+        },
+        {
+            "name": "National Bank of Arizona",
+            "address": "860 W. Cleveland St., Suite 2, St. Johns, AZ 85936",
+            "phone": "(928) 337-0100",
+            "website": "https://www.nbarizona.com/",
+            "image": "national-bank-arizona.webp",
+            "membership": 3,
+            "category": "Banking and Finance"
+        },
+        {
+            "name": "Northland Pioneer College",
+            "address": "65 S. 3rd West, St. Johns, AZ 85936",
+            "phone": "(928) 337-4768",
+            "website": "https://www.npc.edu/",
+            "image": "northland-pioneer-college.webp",
+            "membership": 3,
+            "category": "Education"
+        },
+        {
+            "name": "St. Johns Family Dentistry",
+            "address": "100 N. 13th West, St. Johns, AZ 85936",
+            "phone": "(928) 337-2522",
+            "website": "https://www.stjohnsregionalchamber.com/memberdirectory",
+            "image": "st-johns-family-dentistry.webp",
+            "membership": 2,
+            "category": "Health and Dental"
+        },
+        {
+            "name": "The Market at St. Johns",
+            "address": "1135 W. Cleveland St., St. Johns, AZ 85936",
+            "phone": "(928) 337-2261",
+            "website": "https://www.stjohnsregionalchamber.com/memberdirectory",
+            "image": "market-at-st-johns.webp",
+            "membership": 2,
+            "category": "Grocery and Retail"
+        },
+        {
+            "name": "Maverik",
+            "address": "1280 W. Cleveland St., St. Johns, AZ 85936",
+            "phone": "(928) 977-2977",
+            "website": "https://www.maverik.com/",
+            "image": "maverik.webp",
+            "membership": 1,
+            "category": "Fuel and Convenience"
+        },
+        {
+            "name": "Landmark Homes, LLC",
+            "address": "395 W. Cleveland St., St. Johns, AZ 85936",
+            "phone": "(928) 337-4815",
+            "website": "https://www.stjohnsregionalchamber.com/memberdirectory",
+            "image": "landmark-homes.webp",
+            "membership": 2,
+            "category": "Construction and Housing"
+        },
+        {
+            "name": "CAREaz",
+            "address": "160 E. Commercial St., St. Johns, AZ 85936",
+            "phone": "(928) 337-4000",
+            "website": "https://www.stjohnsregionalchamber.com/memberdirectory",
+            "image": "careaz.webp",
+            "membership": 1,
+            "category": "Community Services"
+        }
+    ]
+}

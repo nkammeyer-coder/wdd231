@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Johns Area Chamber of Commerce | Business Directory</title>
+    <meta name="description" content="Business directory for the St. Johns, Arizona area Chamber of Commerce.">
+    <meta name="author" content="Neal Kammeyer">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="St. Johns Area Chamber of Commerce">
+    <meta property="og:description"
+        content="Delve into the businesses and organizations serving St. Johns, Arizona and the surrounding area.">
+    <meta property="og:image" content="https://nkammeyer-coder.github.io/wdd231/chamber/images/chamber-social.webp">
+    <meta property="og:url" content="https://nkammeyer-coder.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="site-brand">
+            <img src="images/favicon.ico" alt="St. Johns Area Chamber of Commerce logo">
+            <span>St. Johns Area Chamber of Commerce</span>
+        </a>
+        <button id="menu" aria-label="Open navigation menu">&#9776;</button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Business Directory</h1>
+
+        <div class="view-controls">
+            <button id="grid" type="button">Grid</button>
+            <button id="list" type="button">List</button>
+        </div>
+
+        <div id="members" class="grid"></div><!-- Business cards placed by JavaScript-->
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>St. Johns Area Chamber of Commerce</strong></p>
+            <p>St. Johns, Arizona</p>
+            <p>Email: info@stjohnsareachamber.org</p>
+            <p>Phone: (928) 555-1212</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="">
+            </a>
+        </div>
+
+        <div class="development-info">
+            <p>WDD 231 Course Project</p>
+            <p>Neal Kammeyer</p>
+            <p>&copy; <span id="currentyear"></span> St. Johns Area Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
