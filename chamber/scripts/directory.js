@@ -14,6 +14,11 @@ getMembers();
 function displayMembers(members) {
     members.forEach((member) => {
         const card = document.createElement("section");
+        if (member.membership === 3) {
+            card.classList.add("gold");
+        } else if (member.membership === 2) {
+            card.classList.add("silver");
+        }
 
         const image = document.createElement("img");
         const name = document.createElement("h2");
