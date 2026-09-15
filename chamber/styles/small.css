@@ -210,12 +210,14 @@ footer p {
     margin: 0.2rem 0;
 }
 
-#members section.gold {
+#members section.gold,
+#spotlight-cards section.gold {
     background-color: rgba(212, 175, 55, 0.226);
     border-color: rgb(181 139 58 / 50%);
 }
 
-#members section.silver {
+#members section.silver,
+#spotlight-cards section.silver {
     background-color: rgba(192, 192, 192, 0.467);
     border-color: rgba(150, 150, 150, 0.776);
 }

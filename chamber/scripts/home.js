@@ -99,6 +99,12 @@ function displaySpotlights(members) {
     selectedMembers.forEach(member => {
         const card = document.createElement("section");
 
+        if (member.membership === 3) {
+            card.classList.add("gold");
+        } else {
+            card.classList.add("silver");
+        }
+
         const name = document.createElement("h3");
         name.textContent = member.name;
 
