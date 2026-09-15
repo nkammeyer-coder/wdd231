@@ -44,7 +44,7 @@
 
     .home-info {
         grid-template-columns: 2fr 1fr;
-        align-items: auto auto;
+        grid-template-rows: auto auto;
     }
 
     .events {
