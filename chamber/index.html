@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Johns Area Chamber of Commerce | Home</title>
+    <meta name="description"
+        content="St. Johns Area Chamber of Commerce, support our local businesses, community events, and economic growth in St. Johns, Arizona.">
+    <meta name="author" content="Neal Kammeyer">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="St. Johns Area Chamber of Commerce">
+    <meta property="og:description"
+        content="Supporting businesses, events, and community growth in St. Johns, Arizona and the surrounding area.">
+    <meta property="og:image" content="https://nkammeyer-coder.github.io/wdd231/chamber/images/chamber-social.webp">
+    <meta property="og:url" content="https://nkammeyer-coder.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="site-brand">
+            <img src="images/favicon.ico" alt="St. Johns Area Chamber of Commerce logo">
+            <span>St. Johns Area Chamber of Commerce</span>
+        </a>
+        <button id="menu" aria-label="Open navigation menu">&#9776;</button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/st-johns-hero.webp" alt="St. Johns Arizona community" width="1200" height="709">
+            <a href="join.html" class="join-button">Join the Chamber</a>
+        </section>
+
+        <h1>St. Johns Area Chamber of Commerce</h1>
+
+        <section class="home-info">
+            <section class="events">
+                <h2>Events</h2>
+
+                <div class="event">
+                    <p class="event-date">September 24, 2026</p>
+                    <h3>Northland Pioneer College Career Services Day</h3>
+                    <p>Explore career ideas with Northland Pioneer College.</p>
+                </div>
+
+                <div class="event">
+                    <p class="event-date">October 3, 2026</p>
+                    <h3>Fall Community Market</h3>
+                    <p>Support local businesses, vendors, and community organizations.</p>
+                </div>
+
+                <div class="event">
+                    <p class="event-date">November 21, 2026</p>
+                    <h3>Community Thanksgiving Social</h3>
+                    <p>Join together as family and friends for the 33rd Annual Community Thanksgiving.</p>
+                    <ul>
+                        <li>Sponsored by: The Market at St. Johns, Landmark Homes, American Arrow Beef, and St. Johns
+                            Family Dentistry.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <p>Temperature: <span id="current-temp"></span></p>
+                <p>Conditions: <span id="weather-description"></span></p>
+            </section>
+
+            <section class="forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-container"></div>
+            </section>
+        </section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>St. Johns Area Chamber of Commerce</strong></p>
+            <p>St. Johns, Arizona</p>
+            <p>Email: info@stjohnsareachamber.org</p>
+            <p>Phone: (928) 555-1212</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="">
+            </a>
+        </div>
+
+        <div class="development-info">
+            <p>WDD 231 Course Project</p>
+            <p>Neal Kammeyer</p>
+            <p>&copy; <span id="currentyear"></span> St. Johns Area Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

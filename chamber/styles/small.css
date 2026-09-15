@@ -219,3 +219,13 @@ footer p {
     background-color: rgba(192, 192, 192, 0.467);
     border-color: rgba(150, 150, 150, 0.776);
 }
+
+.event-date {
+    font-weight: 700;
+    color: #853333;
+}
+
+.event {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
