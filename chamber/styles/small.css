@@ -211,15 +211,24 @@ footer p {
 }
 
 #members section.gold,
-#spotlight-cards section.gold {
+#spotlight-cards section.gold,
+.membership-card.gold {
     background-color: rgba(212, 175, 55, 0.226);
     border-color: rgb(181 139 58 / 50%);
 }
 
 #members section.silver,
-#spotlight-cards section.silver {
+#spotlight-cards section.silver,
+.membership-card.silver {
     background-color: rgba(192, 192, 192, 0.467);
     border-color: rgba(150, 150, 150, 0.776);
+}
+
+#members section.bronze,
+#spotlight-cards section.bronze,
+.membership-card.bronze {
+    background-color: rgba(159, 105, 51, 0.204);
+    border-color: rgba(160, 95, 35, 0.218);
 }
 
 .hero {
@@ -500,18 +509,6 @@ dialog li {
 dialog::backdrop {
     background-color: rgb(0 0 0 / 60%);
 }
-/* Membership card colors */
-
-.membership-card.silver {
-    background-color: rgba(192, 192, 192, 0.467);
-    border-color: rgba(150, 150, 150, 0.776);
-}
-
-.membership-card.gold {
-    background-color: rgba(212, 175, 55, 0.226);
-    border-color: rgb(181 139 58 / 50%);
-}
-
 
 /* Membership card load animation */
 
