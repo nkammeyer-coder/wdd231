@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Johns Area Chamber of Commerce | Join</title>
+    <meta name="description"
+        content="Apply to be a member of the St. Johns Area Chamber of Commerce and explore available membership levels and benefits.">
+    <meta name="author" content="Neal Kammeyer">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="St. Johns Area Chamber of Commerce">
+    <meta property="og:description"
+        content="Supporting businesses, events, and community growth in St. Johns, Arizona and the surrounding area.">
+    <meta property="og:image" content="https://nkammeyer-coder.github.io/wdd231/chamber/images/chamber-social.webp">
+    <meta property="og:url" content="https://nkammeyer-coder.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="site-brand">
+            <img src="images/favicon.ico" alt="St. Johns Area Chamber of Commerce logo">
+            <span>St. Johns Area Chamber of Commerce</span>
+        </a>
+        <button id="menu" aria-label="Open navigation menu">&#9776;</button>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the St. Johns Area Chamber of Commerce</h1>
+
+        <div class="join-layout">
+
+            <section class="membership-form">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+
+                    <label>
+                        First Name
+                        <input type="text" name="first" title="Enter your first name" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input type="text" name="last" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input type="text" name="title" title="Enter your organizational title"
+                            autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                            placeholder="name@example.com" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Business / Organization Name
+                        <input type="text" name="organization" title="Enter your business or organization name"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <fieldset>
+                        <legend>Membership Level</legend>
+
+                        <label>
+                            <input type="radio" name="membership" value="np" required>
+                            NP Membership
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="bronze">
+                            Bronze Membership
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="silver">
+                            Silver Membership
+                        </label>
+
+                        <label>
+                            <input type="radio" name="membership" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <label> Business / Organization Description
+                        <textarea name="description" title="Describe your business or organization" rows="5"></textarea>
+                    </label>
+
+                    <!-- Hidden timestamp will add time with join.js -->
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Apply for Membership">
+
+                </form>
+
+            </section>
+
+            <section class="membership-levels">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-card">
+                    <h3>NP Membership</h3>
+                    <p>For nonprofit organizations</p>
+                    <p class="membership-price">No Fee</p>
+                    <button type="button" data-modal="np-modal">Learn More</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Build connections in our local business community.</p>
+                    <p class="membership-price">$100 / year</p>
+                    <button type="button" data-modal="bronze-modal">Learn More</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <p>Expand your visibility and community involvement.</p>
+                    <p class="membership-price">$200 / year</p>
+                    <button type="button" data-modal="silver-modal">Learn More</button>
+                </div>
+
+                <div class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <p>Our highest level of promotion and member benefits.</p>
+                    <p class="membership-price">$300 / year</p>
+                    <button type="button" data-modal="gold-modal">Learn More</button>
+                </div>
+
+
+            </section>
+            <dialog id="np-modal">
+                <h2>NP Membership Benefits</h2>
+                <ul>
+                    <li>No annual membership fee</li>
+                    <li>Chamber networking opportunities</li>
+                    <li>Community event participation</li>
+                    <li>Member directory listing</li>
+                </ul>
+                <button type="button" class="close-modal">Close</button>
+            </dialog>
+
+            <dialog id="bronze-modal">
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>All NP membership benefits</li>
+                    <li>Business directory listing</li>
+                    <li>Member networking events</li>
+                    <li>Discounted chamber event fees</li>
+                </ul>
+                <button type="button" class="close-modal">Close</button>
+            </dialog>
+
+            <dialog id="silver-modal">
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>All Bronze membership benefits</li>
+                    <li>Enhanced business directory listing</li>
+                    <li>Additional event discounts</li>
+                    <li>Advertising opportunities</li>
+                    <li>Business training opportunities</li>
+                </ul>
+                <button type="button" class="close-modal">Close</button>
+            </dialog>
+
+            <dialog id="gold-modal">
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>All Silver membership benefits</li>
+                    <li>Priority advertising opportunities</li>
+                    <li>Member spotlight eligibility</li>
+                    <li>Premium event discounts</li>
+                    <li>Recognition at chamber events</li>
+                </ul>
+                <button type="button" class="close-modal">Close</button>
+            </dialog>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>St. Johns Area Chamber of Commerce</strong></p>
+            <p>St. Johns, Arizona</p>
+            <p>Email: info@stjohnsareachamber.org</p>
+            <p>Phone: (928) 555-1212</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="">
+            </a>
+        </div>
+
+        <div class="development-info">
+            <p>WDD 231 Course Project</p>
+            <p>Neal Kammeyer</p>
+            <p>&copy; <span id="currentyear"></span> St. Johns Area Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
