@@ -431,7 +431,7 @@ footer p {
     gap: 1rem;
 }
 
-.membership-levels > h2 {
+.membership-levels>h2 {
     margin-bottom: 0;
 }
 
@@ -442,6 +442,10 @@ footer p {
     text-align: center;
     background-color: #f5f5f5;
     box-shadow: 0 3px 6px rgb(0 0 0 / 15%);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: membershipFadeIn 0.6s ease-out forwards;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
 }
 
 .membership-card h3 {
@@ -495,4 +499,54 @@ dialog li {
 
 dialog::backdrop {
     background-color: rgb(0 0 0 / 60%);
+}
+/* Membership card colors */
+
+.membership-card.silver {
+    background-color: rgba(192, 192, 192, 0.467);
+    border-color: rgba(150, 150, 150, 0.776);
+}
+
+.membership-card.gold {
+    background-color: rgba(212, 175, 55, 0.226);
+    border-color: rgb(181 139 58 / 50%);
+}
+
+
+/* Membership card load animation */
+
+.membership-card:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card:nth-of-type(2) {
+    animation-delay: 0.25s;
+}
+
+.membership-card:nth-of-type(3) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-of-type(4) {
+    animation-delay: 0.55s;
+}
+
+@keyframes membershipFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Membership card hover */
+
+.membership-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 22px rgb(0 0 0 / 25%);
 }
