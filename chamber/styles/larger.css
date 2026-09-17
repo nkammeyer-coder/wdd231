@@ -65,4 +65,66 @@
     #spotlight-cards {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    @media only screen and (min-width: 860px) {
+
+    .join-layout {
+        grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .membership-form,
+    .membership-levels {
+        padding: 1.5rem;
+    }
+
+    /* Form fields */
+
+    .membership-form form {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 1.25rem;
+    }
+
+    /* Organizational title and business name use full width */
+
+    .membership-form label:nth-of-type(3),
+    .membership-form label:nth-of-type(6) {
+        grid-column: 1 / -1;
+    }
+
+    /* Membership selection */
+
+    .membership-form fieldset {
+        grid-column: 1 / -1;
+    }
+
+    .membership-form fieldset label {
+        display: inline-block;
+        margin-right: 1.5rem;
+    }
+
+    /* Organization description */
+
+    .membership-form form > label:last-of-type {
+        grid-column: 1 / -1;
+    }
+
+    /* Submit button */
+
+    .membership-form input[type="submit"] {
+        grid-column: 1 / -1;
+        justify-self: start;
+        min-width: 220px;
+    }
+
+    /* Membership cards */
+
+    .membership-card {
+        padding: 1.25rem;
+    }
+
+    .membership-card h3 {
+        font-size: 1.2rem;
+    }
 }

@@ -340,3 +340,159 @@ footer p {
     color: #245b8a;
     font-weight: 600;
 }
+
+.join-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.membership-form,
+.membership-levels {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 18%);
+}
+
+.membership-form h2,
+.membership-levels h2 {
+    margin-top: 0;
+    color: #243447;
+    text-align: center;
+}
+
+.membership-form form {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-form label {
+    display: block;
+    font-weight: 600;
+}
+
+.membership-form input[type="text"],
+.membership-form input[type="email"],
+.membership-form input[type="tel"],
+.membership-form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.35rem;
+    padding: 0.75rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.membership-form textarea {
+    resize: vertical;
+}
+
+.membership-form fieldset {
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.membership-form legend {
+    padding: 0 0.4rem;
+    color: #243447;
+    font-weight: 700;
+}
+
+.membership-form fieldset label {
+    display: block;
+    margin: 0.65rem 0;
+    font-weight: 400;
+}
+
+.membership-form input[type="radio"] {
+    margin-right: 0.4rem;
+}
+
+.membership-form input[type="submit"] {
+    padding: 0.85rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #843040;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.membership-form input[type="submit"]:hover {
+    background-color: #682536;
+}
+
+.membership-levels {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-levels > h2 {
+    margin-bottom: 0;
+}
+
+.membership-card {
+    padding: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f5f5f5;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 15%);
+}
+
+.membership-card h3 {
+    margin: 0 0 0.5rem;
+    color: #243447;
+}
+
+.membership-card p {
+    margin: 0.5rem 0;
+}
+
+.membership-price {
+    color: #843040;
+    font-weight: 700;
+}
+
+.membership-card button,
+dialog button {
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #526f7a;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.membership-card button:hover,
+dialog button:hover {
+    background-color: #843040;
+}
+
+dialog {
+    width: calc(100% - 2rem);
+    max-width: 500px;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 30%);
+}
+
+dialog h2 {
+    margin-top: 0;
+    color: #243447;
+}
+
+dialog li {
+    margin-bottom: 0.5rem;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 60%);
+}
