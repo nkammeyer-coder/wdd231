@@ -14,10 +14,14 @@ getMembers();
 function displayMembers(members) {
     members.forEach((member) => {
         const card = document.createElement("section");
-        if (member.membership === 3) {
+        if (member.membership === 4) {
             card.classList.add("gold");
-        } else if (member.membership === 2) {
+        } else if (member.membership === 3) {
             card.classList.add("silver");
+        } else if (member.membership === 2) {
+            card.classList.add("bronze");
+        } else {
+            card.classList.add("nonprofit");
         }
 
         const image = document.createElement("img");
@@ -45,12 +49,14 @@ function displayMembers(members) {
 
         let membershipLevel;
 
-        if (member.membership === 3) {
+        if (member.membership === 4) {
             membershipLevel = "Gold Member";
-        } else if (member.membership === 2) {
+        } else if (member.membership === 3) {
             membershipLevel = "Silver Member";
+        } else if (member.membership === 2) {
+            membershipLevel = "Bronze Member";
         } else {
-            membershipLevel = "Member";
+            membershipLevel = "Nonprofit Member";
         }
 
         membership.textContent = membershipLevel;
