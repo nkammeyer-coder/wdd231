@@ -90,7 +90,7 @@ async function getSpotlights() {
 
 function displaySpotlights(members) {
     const qualifiedMembers = members.filter(member =>
-        member.membership === 2 || member.membership === 3
+        member.membership === 3 || member.membership === 4
     );
 
     const shuffledMembers = qualifiedMembers.sort(() => Math.random() - 0.5);
@@ -99,7 +99,7 @@ function displaySpotlights(members) {
     selectedMembers.forEach(member => {
         const card = document.createElement("section");
 
-        if (member.membership === 3) {
+        if (member.membership === 4) {
             card.classList.add("gold");
         } else {
             card.classList.add("silver");
@@ -127,7 +127,7 @@ function displaySpotlights(members) {
 
         const membership = document.createElement("p");
         membership.textContent =
-            member.membership === 3 ? "Gold Member" : "Silver Member";
+            member.membership === 4 ? "Gold Member" : "Silver Member";
 
         card.appendChild(name);
         card.appendChild(image);
