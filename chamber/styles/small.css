@@ -510,8 +510,6 @@ dialog::backdrop {
     background-color: rgb(0 0 0 / 60%);
 }
 
-/* Membership card load animation */
-
 .membership-card:nth-of-type(1) {
     animation-delay: 0.1s;
 }
@@ -539,9 +537,6 @@ dialog::backdrop {
         transform: translateY(0);
     }
 }
-
-
-/* Membership card hover */
 
 .membership-card:hover {
     transform: translateY(-12px);

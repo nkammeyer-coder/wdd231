@@ -79,21 +79,17 @@
             padding: 1.5rem;
         }
 
-        /* Form fields */
 
         .membership-form form {
             grid-template-columns: 1fr 1fr;
             gap: 1rem 1.25rem;
         }
 
-        /* Organizational title and business name use full width */
 
         .membership-form label:nth-of-type(3),
         .membership-form label:nth-of-type(6) {
             grid-column: 1 / -1;
         }
-
-        /* Membership selection */
 
         .membership-form fieldset {
             grid-column: 1 / -1;
@@ -104,13 +100,11 @@
             margin-right: 1.5rem;
         }
 
-        /* Organization description */
 
         .membership-form form>label:last-of-type {
             grid-column: 1 / -1;
         }
 
-        /* Submit button */
 
         .membership-form input[type="submit"] {
             grid-column: 1 / -1;
@@ -118,7 +112,6 @@
             min-width: 220px;
         }
 
-        /* Membership cards */
 
         .membership-card {
             padding: 1.25rem;
