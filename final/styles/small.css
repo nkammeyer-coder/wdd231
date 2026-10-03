@@ -26,7 +26,6 @@ h2 {
 
 h3 {
     color: #A66A32;
-    ;
 }
 
 main {
@@ -145,4 +144,73 @@ img {
 .menu-card .price {
     color: #3B2412;
     font-weight: 700;
+}
+
+.menu-section {
+    padding: 1rem 0;
+}
+
+.menu-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-button,
+.details-button {
+    background-color: #6F7655;
+    color: #ffffff;
+    border: 1px solid #3B2412;
+    border-radius: 5px;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button.active,
+.details-button:hover {
+    background-color: #A66A32;
+}
+
+#menu-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#menu-modal {
+    width: 90%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border: 2px solid #A66A32;
+    border-radius: 8px;
+    background-color: #F4EBDD;
+    color: #3B2412;
+}
+
+#menu-modal::backdrop {
+    background-color: #00000080;
+}
+
+#close-modal {
+    float: right;
+    background: none;
+    border: none;
+    color: #3B2412;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+#modal-content h2 {
+    margin-top: 1rem;
 }
