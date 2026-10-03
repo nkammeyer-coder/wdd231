@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Saddle & Sage Farmhouse Kitchen | Neal Kammeyer</title>
-    <meta name="description" content="Saddle & Sage Farmhouse Kitchen - A mobile concept with farmhouse favorites">
+    <title>Menu | Saddle & Sage Farmhouse Kitchen | Neal Kammeyer</title>
+    <meta name="description" content="Explore the Saddle & Sage Farmhouse Kitchen menu featuring farmhouse pizzas, sides, salads, desserts, and specialty drinks.">
     <meta name="author" content="Neal Kammeyer">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script type="module" src="scripts/main.js"></script>
-    <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/menu.js"></script>
 </head>
 
 <body>
@@ -29,36 +29,34 @@
         <button id="menu" aria-label="Open navigation menu">&#9776;</button>
 
         <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="menu.html">Menu</a>
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
             <a href="catering.html">Catering</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Saddle & Sage Farmhouse Kitchen</h1>
-                <p class="tagline">Fresh food. Friendly faces. Hometown traditions.</p>
+        <h1>Our Menu</h1>
+
+        <section class="menu-section">
+            <h2>Farmhouse Favorites</h2>
+
+            <div class="menu-filters">
+                <button class="filter-button active" data-category="All">All</button>
+                <button class="filter-button" data-category="Pizza">Pizza</button>
+                <button class="filter-button" data-category="Sides">Sides</button>
+                <button class="filter-button" data-category="Salad">Salads</button>
+                <button class="filter-button" data-category="Dessert">Desserts</button>
+                <button class="filter-button" data-category="Drink">Drinks</button>
             </div>
+
+            <div id="menu-items"></div>
         </section>
 
-        <section class="about">
-            <h2>Welcome to Saddle & Sage</h2>
-            <p>
-                Howdy! Welcome to Saddle & Sage Farmhouse Kitchen! We offer farmstyle
-                pizzas, sandwiches, salads, and our famous mixed drinks!
-            </p>
-        </section>
-
-        <section class="featured">
-            <h2>Featured Favorites</h2>
-            <div id="featured-items"></div>
-        </section>
-
-        <section class="upcoming">
-            <h2>Find Us / Upcoming Stops</h2>
-        </section>
+        <dialog id="menu-modal">
+            <button id="close-modal" aria-label="Close menu item details">&times;</button>
+            <div id="modal-content"></div>
+        </dialog>
     </main>
 
     <footer>
