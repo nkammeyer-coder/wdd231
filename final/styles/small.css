@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #3B2412;
+    background-color: #F4EBDD;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Rye", serif;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #6F7655;
+}
+
+h3 {
+    color: #A66A32;
+    ;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+header {
+    background-color: #3B2412;
+    color: #F4EBDD;
+    padding: 1rem;
+    position: relative;
+}
+
+.site-brand {
+    display: block;
+    padding-right: 3.5rem;
+    color: #F4EBDD;
+    font-family: "Rye", serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#menu {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #F4EBDD;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    padding: 0.8rem;
+    color: #F4EBDD;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #A66A32;
+}
+
+footer {
+    background-color: #3B2412;
+    color: #F4EBDD;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #F4EBDD;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
