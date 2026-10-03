@@ -31,5 +31,7 @@
         margin: 0 auto;
         padding: 1.5rem 2rem;
     }
-
+    #featured-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
