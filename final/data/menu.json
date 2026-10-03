@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "name": "Branding Iron Cheese Pizza",
+        "category": "Pizza",
+        "description": "Mozzarella cheese blend and our famous farmhouse pizza sauce.",
+        "price": 14,
+        "image": "images/cheese.webp",
+        "featured": false
+    },
+    {
+        "id": 2,
+        "name": "Ranch Hand Pepperoni Pizza",
+        "category": "Pizza",
+        "description": "Crispy cupped pepperoni with mozzarella and our famous farmhouse pizza sauce.",
+        "price": 15,
+        "image": "images/pepperoni.webp",
+        "featured": false
+    },
+    {
+        "id": 3,
+        "name": "The Meater",
+        "category": "Pizza",
+        "description": "Pepperoni, sausage, ham, bacon with mozzarella and our famous farmhouse pizza sauce.",
+        "price": 18,
+        "image": "images/meater.webp",
+        "featured": false
+    },
+    {
+        "id": 4,
+        "name": "The Homesteader",
+        "category": "Pizza",
+        "description": "Pepperoni, sausage, mushrooms, bell peppers, onion, olives and mozzarella and our famous farmhouse pizza sauce.",
+        "price": 18,
+        "image": "images/homesteader.webp",
+        "featured": true
+    },
+    {
+        "id": 5,
+        "name": "Ranchers Choice",
+        "category": "Pizza",
+        "description": "Leave it to the chef to surprise you with a gourmet surprise.",
+        "price": 20,
+        "image": "images/ranchers-choice.webp",
+        "featured": false
+    },
+    {
+        "id": 6,
+        "name": "Farmhouse Bacon Jalapeño",
+        "category": "Pizza",
+        "description": "Bacon, sliced jalapeños, mozzarella, and our famous farmhouse pizza sauce.",
+        "price": 17,
+        "image": "images/farmhouse-bacon-jalapeno.webp",
+        "featured": false
+    },
+    {
+        "id": 7,
+        "name": "Green Chile Chicken",
+        "category": "Pizza",
+        "description": "Grilled chicken, roasted green chile, mozzarella, and our famous farmhouse pizza sauce.",
+        "price": 19,
+        "image": "images/green-chile-chicken.webp",
+        "featured": false
+    },
+    {
+        "id": 8,
+        "name": "Trail Rolls",
+        "category": "Sides",
+        "description": "Pizza bites rolled and easy to eat, on the run.",
+        "price": 8,
+        "image": "images/trail-rolls.webp",
+        "featured": true
+    },
+    {
+        "id": 9,
+        "name": "Knotty Knots",
+        "category": "Sides",
+        "description": "Fresh baked garlic knots seasoned with herbs and parmesan.",
+        "price": 5,
+        "image": "images/knotty-knots.webp",
+        "featured": false
+    },
+    {
+        "id": 10,
+        "name": "Chef Salad",
+        "category": "Salad",
+        "description": "Crisp lettuce, deli meats, hard-boiled egg, cheese, and choice of dressing.",
+        "price": 7,
+        "image": "images/chef-salad.webp",
+        "featured": false
+    },
+    {
+        "id": 11,
+        "name": "Farmhouse Cobb Salad",
+        "category": "Salad",
+        "description": "Crisp lettuce, grilled chicken, bacon, tomato, hard-boiled egg, cheese, and choice of dressing.",
+        "price": 8,
+        "image": "images/cobb.webp",
+        "featured": false
+    },
+    {
+        "id": 12,
+        "name": "Farmstand Salad",
+        "category": "Salad",
+        "description": "Crisp lettuce, ham, pepperoni, corn, bell peppers, tomato, onion, cheese, and choice of dressing.",
+        "price": 9,
+        "image": "images/farmstand.webp",
+        "featured": true
+    },
+    {
+        "id": 13,
+        "name": "The Ranch Hand Salad",
+        "category": "Salad",
+        "description": "Crisp lettuce, grilled chicken, ham, bacon, corn, bell peppers, tomato, cheese, and choice of dressing",
+        "price": 10,
+        "image": "images/ranch-hand.webp",
+        "featured": false
+    },
+    {
+        "id": 14,
+        "name": "Grandma's Cookie",
+        "category": "Dessert",
+        "description": "Fresh baked chocolate chip cookie made by Grandma with love.",
+        "price": 2,
+        "image": "images/cookie.webp",
+        "featured": true
+    },
+    {
+        "id": 15,
+        "name": "Aunt Mae's Scotcheroos",
+        "category": "Dessert",
+        "description": "Rice Krispies with creamy peanut butter and butterscotch.",
+        "price": 2,
+        "image": "images/scotcheroo.webp",
+        "featured": false
+    },
+    {
+        "id": 16,
+        "name": "Down At Dawn",
+        "category": "Drink",
+        "description": "Coca-Cola, toasted coconut syrup, raspberry syrup, heavy cream, and a fresh lime wedge.",
+        "regularPrice": 2,
+        "largePrice": 4,
+        "image": "images/down-at-dawn.webp",
+        "featured": false
+    },
+    {
+        "id": 17,
+        "name": "Up At Sunrise",
+        "category": "Drink",
+        "description": "Sprite, blackberry syrup, fresh lime juice, and a fresh orange wedge.",
+        "regularPrice": 2,
+        "largePrice": 4,
+        "image": "images/up-at-sunrise.webp",
+        "featured": false
+    },
+    {
+        "id": 18,
+        "name": "Zesty Orchard",
+        "category": "Drink",
+        "description": "Ginger Ale, crisp green apple syrup, desert pear syrup, lemon wedge, and a mint sprig garnish.",
+        "regularPrice": 2,
+        "largePrice": 4,
+        "image": "images/zesty-orchard.webp",
+        "featured": true
+    }
+]
