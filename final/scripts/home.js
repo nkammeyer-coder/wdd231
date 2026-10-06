@@ -2,6 +2,8 @@ const featuredContainer = document.querySelector("#featured-items");
 
 const stopsContainer = document.querySelector("#upcoming-stops");
 
+let savedStops = JSON.parse(localStorage.getItem("savedStops")) || [];
+
 async function getMenuItems() {
     try {
         const response = await fetch("data/menu.json");
@@ -79,6 +81,10 @@ function displayUpcomingStops(stops) {
         const card = document.createElement("article");
         card.classList.add("stop-card");
 
+        if (savedStops.includes(stop.id)) {
+            card.classList.add("saved");
+}
+
         const stopDate = new Date(`${stop.date}T00:00:00`);
 
         const formattedDate = stopDate.toLocaleDateString("en-US", {
@@ -94,12 +100,31 @@ function displayUpcomingStops(stops) {
             <p>${formattedDate}</p>
             <p>${stop.time}</p>
             <button class="save-stop" data-id="${stop.id}">
-                Save This Stop
+                ${savedStops.includes(stop.id) ? "Saved ✓" : "Save This Stop"}
             </button>
         `;
 
         stopsContainer.appendChild(card);
     });
 }
+stopsContainer.addEventListener("click", event => {
+    if (event.target.classList.contains("save-stop")) {
+        const stopId = Number(event.target.dataset.id);
+        const card = event.target.closest(".stop-card");
+
+        if (savedStops.includes(stopId)) {
+            savedStops = savedStops.filter(id => id !== stopId);
+            event.target.textContent = "Save This Stop";
+            card.classList.remove("saved");
+        } else {
+            savedStops.push(stopId);
+            event.target.textContent = "Saved ✓";
+            card.classList.add("saved");
+        }
+
+        localStorage.setItem("savedStops", JSON.stringify(savedStops));
+    }
+});
+
 getMenuItems();
 getUpcomingStops();

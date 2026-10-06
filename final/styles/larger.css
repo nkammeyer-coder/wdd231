@@ -36,6 +36,8 @@
     }
     #menu-items {
     grid-template-columns: repeat(3, 1fr);
+    }
+    #upcoming-stops {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-}
-

@@ -214,3 +214,46 @@ img {
 #modal-content h2 {
     margin-top: 1rem;
 }
+
+#upcoming-stops {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.stop-card {
+    background-color: #ffffff90;
+    border: 1px solid #A66A32;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.stop-card.saved .save-stop {
+    background-color: #A66A32;
+}
+
+.stop-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.stop-card p {
+    margin: 0.4rem 0;
+}
+
+.save-stop {
+    margin-top: 0.75rem;
+    padding: 0.75rem 1.3rem;
+    background-color: #6F7655;
+    color: #ffffff;
+    border: 1px solid #3B2412;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.save-stop:hover {
+    background-color: #A66A32;
+}
