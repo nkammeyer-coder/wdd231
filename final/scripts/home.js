@@ -1,5 +1,7 @@
 const featuredContainer = document.querySelector("#featured-items");
 
+const stopsContainer = document.querySelector("#upcoming-stops");
+
 async function getMenuItems() {
     try {
         const response = await fetch("data/menu.json");
@@ -55,5 +57,49 @@ function displayFeaturedItems(items) {
         featuredContainer.appendChild(card);
     });
 }
+async function getUpcomingStops() {
+    try {
+        const response = await fetch("data/stops.json");
 
+        if (!response.ok) {
+            throw new Error("Unable to load upcoming stops.");
+        }
+
+        const stops = await response.json();
+        displayUpcomingStops(stops);
+    } catch (error) {
+        console.error("Error loading upcoming stops:", error);
+    }
+}
+
+function displayUpcomingStops(stops) {
+    stopsContainer.innerHTML = "";
+
+    stops.forEach(stop => {
+        const card = document.createElement("article");
+        card.classList.add("stop-card");
+
+        const stopDate = new Date(`${stop.date}T00:00:00`);
+
+        const formattedDate = stopDate.toLocaleDateString("en-US", {
+            weekday: "long",
+            month: "long",
+            day: "numeric"
+        });
+
+        card.innerHTML = `
+            <h3>${stop.name}</h3>
+            <p><strong>${stop.location}</strong></p>
+            <p>${stop.city}, Arizona</p>
+            <p>${formattedDate}</p>
+            <p>${stop.time}</p>
+            <button class="save-stop" data-id="${stop.id}">
+                Save This Stop
+            </button>
+        `;
+
+        stopsContainer.appendChild(card);
+    });
+}
 getMenuItems();
+getUpcomingStops();
