@@ -96,18 +96,6 @@ footer a {
     color: #F4EBDD;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.social-links img {
-    width: 32px;
-    height: 32px;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -255,5 +243,83 @@ img {
 }
 
 .save-stop:hover {
+    background-color: #A66A32;
+}
+
+.catering-intro,
+.catering-options,
+.catering-inquiry {
+    padding: 1rem 0;
+}
+
+.catering-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.catering-cards article {
+    background-color: #ffffff90;
+    border: 1px solid #A66A32;
+    border-radius: 6px;
+    padding: 1.25rem;
+}
+
+.catering-cards h3 {
+    margin-top: 0;
+}
+
+
+.catering-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 800px;
+}
+
+.catering-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 700;
+}
+
+.catering-form input,
+.catering-form select,
+.catering-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #A66A32;
+    border-radius: 5px;
+    background-color: #ffffff90;
+    color: #3B2412;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+.catering-form textarea {
+    resize: vertical;
+}
+
+.catering-form input:focus,
+.catering-form select:focus,
+.catering-form textarea:focus {
+    outline: 2px solid #6F7655;
+    outline-offset: 2px;
+}
+
+.submit-button {
+    padding: 0.85rem 1.3rem;
+    background-color: #6F7655;
+    color: #ffffff;
+    border: 1px solid #3B2412;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.submit-button:hover {
     background-color: #A66A32;
 }

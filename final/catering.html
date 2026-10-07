@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering | Saddle & Sage Farmhouse Kitchen | Neal Kammeyer</title>
+    <meta name="description" content="Plan your next event with Saddle & Sage Farmhouse Kitchen catering that features farmhouse favorites that are perfect for parties, celebrations, and community events.">
+    <meta name="author" content="Neal Kammeyer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rye&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="site-brand">
+            Saddle & Sage Farmhouse Kitchen
+        </a>
+
+        <button id="menu" aria-label="Open navigation menu">&#9776;</button>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="catering.html" class="active">Catering</a>
+        </nav>
+    </header>
+
+   <main>
+        <h1>Catering</h1>
+
+        <section class="catering-intro">
+            <h2>Let Saddle & Sage Cater Your Next Event</h2>
+            <p>
+                From family celebrations and birthday parties to school events,
+                community gatherings, and more, Saddle & Sage Farmhouse Kitchen
+                brings delicious food and friendly service to you.
+            </p>
+        </section>
+
+        <section class="catering-options">
+            <h2>Perfect For:</h2>
+
+            <div class="catering-cards">
+                <article>
+                    <h3>Parties & Celebrations</h3>
+                    <p>
+                        Make birthdays, reunions, graduations, and all of life's special
+                        occasions a little more delicious.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Community Events</h3>
+                    <p>
+                        Perfect for festivals, school functions, sporting events,
+                        fundraisers, and community gatherings.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Private Catering</h3>
+                    <p>
+                        Let us help bring a relaxed farmhouse-style dining experience to your
+                        family gathering, business meeting, or private event.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="catering-inquiry">
+            <h2>Tell Us About Your Event</h2>
+            <p>
+                Send us a few details and we'll help you start planning.
+            </p>
+        <form method="get" action="thankyou.html" class="catering-form">
+            <label>
+                First Name:
+                <input type="text" name="firstName" required autocomplete="given-name">
+            </label>
+
+            <label>
+                Last Name:
+                <input type="text" name="lastName" required autocomplete="family-name">
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" required autocomplete="email">
+            </label>
+
+            <label>
+                Phone#: 
+                <input type="tel" name="phone" autocomplete="tel">
+            </label>
+
+            <label>
+                Event Date:
+                <input type="date" name="eventDate" required>
+            </label>
+
+            <label>
+                Number of Guests:
+                <input type="number" name="guests" min="10" max="500" required>
+            </label>
+
+            <label>
+                Event Type:
+                <select name="eventType" required>
+                    <option value="" disabled selected>Select an event type</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="wedding">Wedding / Reception</option>
+                    <option value="school">School Event</option>
+                    <option value="community">Community Event</option>
+                    <option value="business">Business / Corporate Event</option>
+                    <option value="private">Private Gathering</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+
+            <label>
+                Event Location:
+                <input type="text" name="location" required>
+            </label>
+
+            <label class="full-width">
+                Tell Us About Your Event:
+                <textarea name="details" rows="5"
+                    placeholder="Tell us what you're planning, what you'd like us to serve, or anything else we should know."></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <button type="submit" class="submit-button">
+                Request Catering Information
+            </button>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Saddle & Sage Farmhouse Kitchen</strong></p>
+        <p>Fresh Neapolitan Pizza, Incredible Sides, and Delicious Salads. Friendly faces. Hometown traditions.</p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+   
+        <p>&copy; <span id="currentyear"></span> Saddle & Sage Farmhouse Kitchen | Neal Kammeyer | Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
